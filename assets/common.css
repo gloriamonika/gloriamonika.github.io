@@ -1,12 +1,14 @@
+ @import url(https://fonts.bunny.net/css?family=karla:400,400i,700,700i|merriweather:400,400i,700,700i);
+
  /* variables */
-:root{
+ :root{
     --body: #1a1a1a;
     --bodyFont: 'Karla', sans-serif;
     --fontSize: 2rem;
     --background: #ffeeee;
+    --headlineFont: 'Merriweather', serif;
 }
 
-@import url(https://fonts.bunny.net/css?family=karla:400,400i,700,700i|merriweather:400,400i,700,700i);
 
 body{
     margin: 0;
@@ -17,11 +19,34 @@ body{
     font-size:var(--fontSize);
 }
 
-#container{
+#title-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+#title-card main-card{
+    font-size:calc(var(--fontSize) * 1.5);
+    font-family:var(--headlineFont);
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    width:90%;
+    height:100vh;
+    flex-wrap:wrap;
+}
+
+main-card .text-content{
+    padding:20px;
+    margin-bottom:40px;
+}
+
+#bio-detail{
     display:flex;
     align-items:center;
-    width:80%;
-    height:auto;
-    margin:0 auto;
-    margin-top:5rem;
+    justify-content:space-between;
+    width:90%;
+    background:blue;
+    padding:20px;
 }
