@@ -1,0 +1,27 @@
+ /* variables */
+:root{
+    --body: #1a1a1a;
+    --bodyFont: 'Karla', sans-serif;
+    --fontSize: 2rem;
+    --background: #ffeeee;
+}
+
+@import url(https://fonts.bunny.net/css?family=karla:400,400i,700,700i|merriweather:400,400i,700,700i);
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--bodyFont);
+    color: var(--body);
+    background:var(--background);
+    font-size:var(--fontSize);
+}
+
+#container{
+    display:flex;
+    align-items:center;
+    width:80%;
+    height:auto;
+    margin:0 auto;
+    margin-top:5rem;
+}
